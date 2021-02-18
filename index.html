@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Jokes API</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+  <h1><u>Good Clean Joke Generator</u></h1>
+
+  <p>This website uses the <a href="https://sv443.net/jokeapi/v2/">JokesAPI</a> to
+    tell you clean jokes! Note that I have set the flags to keep the jokes clean. </p>
+  <div class = 'warning'>The flags at the bottom tell you what could be potentially triggering for some people!</div>
+
+  <form class="pure-form"> <fieldset>
+      <p>Select a category and then hit the Generate Button to generate a new joke</p>
+      <div class = 'form'>
+    <select id="selector">
+      <option value="Any">Any</option>
+      <option value="Programming">Programming</option>
+      <option value="Misc">Misc</option>
+      <option value="Spooky">Spooky</option>
+      <option value="Pun">Pun</option>
+      <option value="Christmas">Christmas</option>
+    </select>
+</div>
+    <p></p>
+    <div class = 'button'><button id="generate" class="pure-button pure-button-primary">Generate!</div></button>
+    </fieldset>
+
+  </form>
+  <p id = "category"></p>
+  <p id="result"></p>
+  <p id = "flags"></p>
+
+  <script text="type/javascript" src="/script-jokes.js">
+  </script>
+<h2><u>These are some memes that I find funny!</u></h2>
+<div class='photo-grid-container'>
+  <div class='photo-grid'>
+      <div class='photo-grid-item first-item'>
+        <img src='images/memeFour.jpg' width='400px'/>
+      </div>
+      <div class='photo-grid-item'>
+        <img src='images/memeOne.jpg' width = '400px'/>
+      </div>
+      <div class='photo-grid-item'>
+        <img src='images/memeTwo.png' width = '400px'/>
+      </div> 
+      <div class='photo-grid-item last-item'>
+        <img src='images/memeThree.png' width = '400px'/>
+      </div> 
+  </div>
+  </div>
+</div>
+<div class ='footer'>
+  <div class= 'footer-item'>
+    <h3><a href = 'https://github.com/TraceHale24/JokeGenerator'>Github</a></h3>
+    <h3><a href="https://www.linkedin.com/in/trace-hale-b3a998169/">LinkedIn</a></h3>
+    <p>Disclaimer: I do own some of the photos but not all of them on this site! I have been to all of the places shown though!</p>
+
+  </div>
+</div>
+</body>
+
+</html>
